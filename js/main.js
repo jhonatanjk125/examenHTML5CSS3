@@ -17,5 +17,11 @@ function toggleMenu(){
     const navigation = document.querySelector('.cart-nav');
     menuToggle.classList.toggle('active')
     navigation.classList.toggle('active')
+  }
 
+  function toggleArticle(){
+    const articleToggle = document.querySelector('.article-toggle');
+    const article = document.querySelector('.pop-up');
+    articleToggle.classList.toggle('active')
+    article.classList.toggle('active')
   }

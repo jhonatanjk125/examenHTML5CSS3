@@ -113,6 +113,63 @@ h1 {
   z-index: 11;
 }
 
+.pop-up {
+  display: none;
+}
+
+
+.pop-up.active {
+  position: fixed;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto;
+  width: 75vw;
+  max-width: 600px;
+  margin: auto;
+  row-gap: 2svh;
+  z-index: 15;
+}
+
+
+.pop-up.active>img {
+  grid-area: 2 / 1 / span 1 / span 2;
+  justify-self: center;
+  max-width: 70vw;
+  object-fit: cover;
+}
+
+.pop-up.active section {
+  grid-area: 3 / 1 / span 1 / span 2;
+  max-height: 40svh;
+}
+
+.pop-up.active section p {
+  overflow-y: scroll;
+}
+
+.pop-up.active i {
+  grid-area: 1 / 2 / span 1 / span 1;
+  font-size: 2rem;
+  justify-self: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .cart-toggle.active{
   position: fixed;
   right: 20px;
