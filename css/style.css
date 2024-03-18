@@ -1,10 +1,119 @@
-@import url(variables.css);
+@import url(./variables.css);
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
   }
 
+#menu {
+  display:flex;
+  justify-content: center;
+} 
+
+#menu ul {
+  display:flex;
+  width: 100%;
+  overflow-x: scroll;
+  max-width: 1400px;
+} 
+
+#menu ul li{
+  list-style: none;
+  padding: 1rem 0.5rem;
+} 
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+  padding: 0 2vw;
+}
+
+main article {
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr 6fr;
+  grid-template-rows: auto;
+  width: 100vw;
+  max-width: 1400px;
+  background-color: var(--background-color);
+  border: var(--border);
+}
+
+main > article > section:first-child {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+main > article > section > img {
+  width: auto;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+main > article > img {
+  width: auto;
+  max-height: 450px;
+}
+
+.product-description {
+  padding: 1rem 0;
+}
+
+.product-price {
+  padding-bottom: 2rem;
+}
+
+main > article > section > a {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  padding: 0.5rem 1.5rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.product-score {
+  padding-top: 1rem;
+}
+
+@media(max-width:900px) {
+  main article {
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto;
+    width: 90vw;
+    margin: auto;
+    row-gap: 2svh;
+  }
+
+  main article section:first-child {
+    grid-area: 1 / 1 / span 1 / span 1;
+    max-width: 20vw;
+    justify-content: space-between;
+  }
+
+  main article section:first-child > img {
+    max-height: 50px;
+  }
+
+  main article > img {
+    grid-area: 1 / 2 / span 1 / span 1;
+    max-width: 60vw;
+    object-fit: cover;
+  }
+
+  main article section:last-child {
+    grid-area: 2 / 1 / span 1 / span 2;
+  }
   
+}
