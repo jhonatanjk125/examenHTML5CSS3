@@ -12,20 +12,57 @@
 
 <body>
   <nav id="menu">
-    <ul>
-      <li>Producto 1</li>
-      <li>Producto 2</li>
-      <li>Producto 3</li>
-      <li>Producto 4</li>
-      <li>Producto 5</li>
-      <li>Producto 6</li>
-      <li>Producto 7</li>
-      <li>Producto 8</li>
-      <li>Producto 9</li>
+    <div class="toggle" onclick="toggleMenu()"></div>
+    <ul class="navigation">
+      <li><a href="#product-1">Producto 1</a></li>
+      <li><a href="#product-2">Producto 2</a></li>
+      <li><a href="#product-3">Producto 3</a></li>
+      <li><a href="#product-4">Producto 4</a></li>
+      <li><a href="#product-5">Producto 5</a></li>
+      <li><a href="#product-6">Producto 6</a></li>
+      <li><a href="#product-7">Producto 7</a></li>
+      <li><a href="#product-8">Producto 8</a></li>
+      <li><a href="#product-9">Producto 9</a></li>
     </ul>
+    <div class="cart-toggle" onclick="toggleCart()"></div>
+    <section class="cart-nav">
+      <article>
+        <img src="https://geekhunters.com.co/cdn/shop/products/SCH6.png?v=1667444905&width=1100">
+        <h2>Nombre del producto</h2>
+        <i class='bx bx-trash' ></i>
+        <p class="item-qty">5</p>
+        <p>$500.000 <small>$499.99</small></p>
+      </article>
+      <article>
+        <img src="https://geekhunters.com.co/cdn/shop/products/SCH6.png?v=1667444905&width=1100">
+        <h2>Nombre del producto</h2>
+        <i class='bx bx-trash' ></i>
+        <p class="item-qty">5</p>
+        <p>$500.000 <small>$499.99</small></p>
+      </article>
+      <article>
+        <img src="https://geekhunters.com.co/cdn/shop/products/SCH6.png?v=1667444905&width=1100">
+        <h2>Nombre del producto</h2>
+        <i class='bx bx-trash' ></i>
+        <p class="item-qty">5</p>
+        <p>$500.000 <small>$499.99</small></p>
+      </article>
+      <article>
+        <img src="https://geekhunters.com.co/cdn/shop/products/SCH6.png?v=1667444905&width=1100">
+        <h2>Nombre del producto</h2>
+        <i class='bx bx-trash' ></i>
+        <p class="item-qty">5</p>
+        <p>$500.000 <small>$499.99</small></p>
+      </article>
+      <div class="total-purchase">
+        <h3>Total</h3>
+        <p>$1.999</p>
+        <a>Pagar</a>
+      </div>
+    </section>
   </nav>
   <main>
-    <article>
+    <article id="product-1">
       <section>
         <img src="https://geekhunters.com.co/cdn/shop/products/SCH6.png?v=1667444905&width=1100">
         <img src="https://geekhunters.com.co/cdn/shop/products/SCH6.png?v=1667444905&width=1100">
@@ -51,7 +88,7 @@
         <a href="#">Obtener</a>
       </section>
     </article>
-    <article>
+    <article id="product-2">
       <section>
         <img src="https://geekhunters.com.co/cdn/shop/products/SCH6.png?v=1667444905&width=1100">
         <img src="https://geekhunters.com.co/cdn/shop/products/SCH6.png?v=1667444905&width=1100">
@@ -77,7 +114,7 @@
         <a href="#">Obtener</a>
       </section>
     </article>
-    <article>
+    <article id="product-3">
       <section>
         <img src="https://geekhunters.com.co/cdn/shop/products/SCH6.png?v=1667444905&width=1100">
         <img src="https://geekhunters.com.co/cdn/shop/products/SCH6.png?v=1667444905&width=1100">
@@ -103,7 +140,7 @@
         <a href="#">Obtener</a>
       </section>
     </article>
-    <article>
+    <article id="product-4">
       <section>
         <img src="https://geekhunters.com.co/cdn/shop/products/SCH6.png?v=1667444905&width=1100">
         <img src="https://geekhunters.com.co/cdn/shop/products/SCH6.png?v=1667444905&width=1100">
@@ -129,7 +166,7 @@
         <a href="#">Obtener</a>
       </section>
     </article>
-    <article>
+    <article id="product-5">
       <section>
         <img src="https://geekhunters.com.co/cdn/shop/products/SCH6.png?v=1667444905&width=1100">
         <img src="https://geekhunters.com.co/cdn/shop/products/SCH6.png?v=1667444905&width=1100">
@@ -155,7 +192,7 @@
         <a href="#">Obtener</a>
       </section>
     </article>
-    <article>
+    <article id="product-6">
       <section>
         <img src="https://geekhunters.com.co/cdn/shop/products/SCH6.png?v=1667444905&width=1100">
         <img src="https://geekhunters.com.co/cdn/shop/products/SCH6.png?v=1667444905&width=1100">
@@ -182,6 +219,7 @@
       </section>
     </article>
   </main>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
